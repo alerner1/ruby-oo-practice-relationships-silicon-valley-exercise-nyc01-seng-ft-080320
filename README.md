@@ -28,54 +28,54 @@ We've provided you with a console that you can use to test your code. To enter a
 #### Build the following methods on the `Startup` class
 
 - `Startup#name`
-  - returns a **string** that is the startup's name
+  - returns a **string** that is the startup's name # DONE, works
 - `Startup#founder`
-  - returns a **string** that is the founder's name
-  - Once a startup is created, the founder cannot be changed.
+  - returns a **string** that is the founder's name # DONE
+  - Once a startup is created, the founder cannot be changed. # DONE, works
 - `Startup#domain`
-  - returns a **string** that is the startup's domain
+  - returns a **string** that is the startup's domain # DONE, works
 - `Startup#pivot`
   - given a string of a **domain** and a string of a **name**, change the domain
     and name of the startup. This is the only public method through which the
-    domain should be changed.
+    domain should be changed. # DONE, works
 - `Startup.all`
-  - should return **all** of the startup instances
+  - should return **all** of the startup instances # DONE, works
 - `Startup.find_by_founder`
-  - given a string of a **founder's name**, returns the **first startup** whose founder's name matches
+  - given a string of a **founder's name**, returns the **first startup** whose founder's name matches # DONE, works
 - `Startup.domains`
-  - should return an **array** of all of the different startup domains
+  - should return an **array** of all of the different startup domains # DONE, works
 
 ---
 
 #### Build out the following methods on the `VentureCapitalist` class
 
 - `VentureCapitalist#name`
-  - returns a **string** that is the venture capitalist's name
+  - returns a **string** that is the venture capitalist's name # DONE, works
 - `VentureCapitalist#total_worth`
-  - returns a **number** that is the total worth of this investor (e.g., think of it as how much money they have)
+  - returns a **number** that is the total worth of this investor (e.g., think of it as how much money they have) # DONE, works
 - `VentureCapitalist.all`
-  - returns an array of all venture capitalists
+  - returns an array of all venture capitalists # DONE, works
 - `VentureCapitalist.tres_commas_club`
-  - returns an array of all venture capitalists in the Trés Commas club (they have more then 1,000,000,000 `total_worth`)
+  - returns an array of all venture capitalists in the Trés Commas club (they have more then 1,000,000,000 `total_worth`) # DONE, works
 
 ---
 
 #### Build out the following methods on the `FundingRound` class
 
 - `FundingRound#startup`
-  - returns the startup object for that given funding round
-  - Once a funding round is created, I should not be able to change the startup
+  - returns the startup object for that given funding round # DONE, works
+  - Once a funding round is created, I should not be able to change the startup # DONE, works
 - `FundingRound#venture_capitalist`
-  - returns the venture capitalist object for that given funding round
-  - Once a funding round is created, I should not be able to change the venture capitalist
+  - returns the venture capitalist object for that given funding round # DONE, works
+  - Once a funding round is created, I should not be able to change the venture capitalist # DONE, works
 - `FundingRound#type`
-  - returns a **string** that is the type of funding round
+  - returns a **string** that is the type of funding round # DONE, works
   - Examples include: Angel, Pre-Seed, Seed, Series A, Series B, Series C, etc.
 - `FundingRound#investment`
-  - returns a **number** that is the amount invested during this funding round
-  - This should be a float that is not a negative number.
+  - returns a **number** that is the amount invested during this funding round # DONE
+  - This should be a float that is not a negative number. # DONE, works
 - `FundingRound.all`
-  - returns all of the funding rounds
+  - returns all of the funding rounds # DONE, works
 
 ---
 
@@ -84,27 +84,27 @@ We've provided you with a console that you can use to test your code. To enter a
 #### Startup
 
 - `Startup#sign_contract`
-  - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
+  - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist. # DONE
 - `Startup#num_funding_rounds`
-  - Returns the total number of funding rounds that the startup has gotten
+  - Returns the total number of funding rounds that the startup has gotten # DONE
 - `Startup#total_funds`
-  - Returns the total sum of investments that the startup has gotten
+  - Returns the total sum of investments that the startup has gotten # DONE
 - `Startup#investors`
-  - Returns a **unique** array of all the venture capitalists that have invested in this company
+  - Returns a **unique** array of all the venture capitalists that have invested in this company # DONE
 - `Startup#big_investors`
-  - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club
+  - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club # DONE
 
 #### VentureCapitalist
 
 - `VentureCapitalist#offer_contract`
-  - given a **startup object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
+  - given a **startup object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist. # DONE
 - `VentureCapitalist#funding_rounds`
-  - returns an array of all funding rounds for that venture capitalist
+  - returns an array of all funding rounds for that venture capitalist # DONE
 - `VentureCapitalist#portfolio`
-  - Returns a **unique** list of all startups this venture capitalist has funded
+  - Returns a **unique** list of all startups this venture capitalist has funded # DONE
 - `VentureCapitalist#biggest_investment`
-  - returns the largest funding round given by this venture capitalist
+  - returns the largest funding round given by this venture capitalist # DONE
 - `VentureCapitalist#invested`
-  - given a **domain string**, returns the total amount invested in that domain
+  - given a **domain string**, returns the total amount invested in that domain # DONE
 
 ---
